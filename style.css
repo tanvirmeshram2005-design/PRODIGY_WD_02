@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c3e50;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.stopwatch-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+    width: 350px;
+}
+
+#display {
+    font-size: 3.2rem;
+    font-family: monospace;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+#startBtn { background: #27ae60; color: white; }
+#pauseBtn { background: #f1c40f; color: #333; }
+#resetBtn { background: #e74c3c; color: white; }
+#lapBtn { background: #3498db; color: white; }
+
+button:hover { opacity: 0.8; }
+
+#laps {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+    border-top: 1px solid #eee;
+}
+
+#laps li {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
