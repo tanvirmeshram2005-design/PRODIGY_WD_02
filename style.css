@@ -1,0 +1,51 @@
+:root {
+    --bg-color: #e0e5ec;
+    --shadow-light: #ffffff;
+    --shadow-dark: #a3b1c6;
+    --accent: #4d7cfe;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.stopwatch-container {
+    padding: 50px;
+    background: var(--bg-color);
+    border-radius: 50px;
+    box-shadow: 20px 20px 60px var(--shadow-dark), -20px -20px 60px var(--shadow-light);
+    text-align: center;
+}
+
+.timer-display {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 4rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.ms {
+    display: inline;
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.controls button {
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    background: var(--bg-color);
+    box-shadow: 6px 6px 12px var(--shadow-dark), -6px -6px 12px var(--shadow-light);
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.controls button:active {
+    box-shadow: inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light);
+}
